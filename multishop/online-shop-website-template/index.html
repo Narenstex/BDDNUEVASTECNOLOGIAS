@@ -29,10 +29,16 @@
       <tbody>
         <tr>
           <td>Diego Garcia</td>
+        
           <td>Scopus</td>
           <td>("generative artificial intelligence" OR "generative AI") AND education AND ethics NOT robotics</td>
           <td>454 resultados</td>
         </tr>
+        <tr>
+          <td>Naren Rojas</td>
+          <td>Scopus</td>
+          <td>("generative artificial intelligence" OR "generative AI") AND healthcare AND ethics NOT robotics</td>
+          <td>389 resultados</td>
       </tbody>
     </table>
   </section>
@@ -73,14 +79,76 @@
         Compara respuestas de humanos y sistemas de IA a dilemas éticos en investigación y enseñanza de integridad académica.
       </p>
     </article>
-  </section>
 
-  <!-- DIEGO GARCIA: Buscador y contador -->
+  </section>
+  <!-- Naren Rojas: Artículo 1 -->
+   <!-- referencia apa: Rivas Sucari, H. C. (2025). The artificial intelligence revolution in primary care: Challenges, dilemmas and opportunities. Atención Primaria, 57(3), 103232. https://doi.org/10.1016/j.aprim.2025.103232 -->
+    <article class="articulo">
+      <h3>	AI in primary care | IA en la atención primaria</h3>
+      <p><strong>Autores:</strong> 	Rivas Sucari, H.C.</p>
+      <p><strong>Fuente:</strong> 	Atencion Primaria</p>
+      <button onclick="toggleResumen('resumen4')">Ver resumen</button>
+      <p id="resumen4" style="display:none;">
+        La inteligencia artificial (IA) está revolucionando la atención primaria al mejorar diagnósticos, 
+        gestión de enfermedades crónicas y eficiencia en la atención médica. Sin embargo, no reemplaza a los profesionales de la salud,
+         sino que complementa su juicio clínico, empatía y capacidad de decisión. El avance de la IA plantea nuevos dilemas éticos que requieren actualizar la bioética para garantizar transparencia, equidad, responsabilidad y privacidad. La OMS propone seis principios rectores para un uso responsable: autonomía del paciente, seguridad pública, transparencia, responsabilidad, inclusión y sostenibilidad. En conclusión, la integración de la IA en medicina es clave,
+         pero debe hacerse de forma ética y centrada en el bienestar humano.
+      </p>
+    </article>
+
+    <!-- Naren Rojas: Artículo 2 -->
+    <!-- Martínez Sesmero, J. M. (2025). Ethical aspects of AI in hospital pharmacy [Aspectos éticos de la inteligencia artificial (IA) en farmacia hospitalaria]. Farmacia Hospitalaria. https://doi.org/10.1016/j.farma.2025.05.001 -->
+    <article class="articulo">
+      <h3>Ethical aspects of AI in hospital pharmacy
+[Aspectos éticos de la inteligencia artificial (IA) en farmacia hospitalaria]</h3>
+      <p><strong>Autores:</strong> Martínez Sesmero, José Manue</p>
+      <p><strong>Fuente:</strong> Farmacia Hospitalaria</p>
+      <button onclick="toggleResumen('resumen5')">Ver resumen</button>
+      <p id="resumen5" style="display:none;">
+        La farmacia hospitalaria transita de la digitalización a la transformación digital (TD), integrando tecnologías para rediseñar procesos, ganar eficiencia y dedicar más tiempo al paciente.
+La IA ofrece oportunidades para mejorar la atención y aliviar carga laboral, pero exige un marco ético y humano: beneficencia, autonomía, no maleficencia y justicia.
+Los retos clave son transparencia, privacidad y seguridad de datos, explicabilidad, responsabilidad, equidad y no discriminación, evitando sesgos que agraven desigualdades.
+La explicabilidad permite que los farmacéuticos comprendan y supervisen decisiones algorítmicas; la supervisión humana y marcos regulatorios (p. ej., Ley de IA de la UE, 2024) son esenciales.
+Se requiere formación profesional, información clara a pacientes y evaluación rigurosa (incluido análisis coste-utilidad) bajo buen gobierno público para integrar la IA de forma segura, ética y equitativa.
+      </p>
+    </article>
+
+    <!-- Naren Rojas: Artículo 3-->
+    <!-- Prettel, M. G. (2025). Guidance for generative AI in education and research. A critical review | Guía para el uso de IA generativa en educación e investigación. Una reseña crítica. Educacion Matematica, 37(1), 1-14. https://doi.org/10.24844/EM3701.01 -->
+    <article class="articulo">
+      <h3>	
+Guidance for generative AI in education and research. A critical review | Guía para el uso de IA generativa en educación e investigación. Una reseña crítica</h3>
+      <p><strong>Autores:</strong> 	Prettel, M.G</p>
+      <p><strong>Fuente:</strong> 	Educacion Matematica</p>
+      <button onclick="toggleResumen('resumen6')">Ver resumen</button>
+      <p id="resumen6" style="display:none;">
+        La guía de la UNESCO sobre inteligencia artificial generativa (IAGen) en educación y investigación plantea un marco conceptual para analizar su impacto en la enseñanza y el acceso al conocimiento.
+       Destaca aplicaciones pedagógicas como la personalización del aprendizaje, la visualización de conceptos abstractos y la generación de simulaciones interactivas. Sin embargo, se señala que la obra enfatiza más los beneficios que los riesgos, dejando pendientes temas como capacitación docente y dependencia tecnológica. También aborda la necesidad de garantizar equidad y acceso, así como de interpretar los datos educativos con criterios pedagógicos sólidos para evitar sesgos y reduccionismos.
+        En conclusión, la guía ofrece un referente valioso para docentes e investigadores, 
+        aunque requiere mayor profundidad crítica en su análisis.
+      </p>
+    </article>
+
+<!-- Buscador y herramientas -->
   <section>
     <h2>Buscar artículos</h2>
     <input type="text" id="buscador" onkeyup="filtrarPorKeyword()" placeholder="Escribe una palabra clave...">
+    <button onclick="ordenarArticulos()">Ordenar artículos A-Z</button>
+    <button onclick="contarResumidos()">Contar resúmenes abiertos</button>
+    <button onclick="resaltarPalabra()">Resaltar palabra clave</button>
     <p id="contador"></p>
   </section>
+
+  <!-- Conclusión de Naren -->
+  <section id="conclusion">
+    <h2>Conclusión</h2>
+    <p>
+      La IA generativa está transformando diversas disciplinas, desde la educación hasta la
+      salud. Sin embargo, es fundamental acompañar su implementación con un marco ético y
+      responsable que garantice su uso correcto en beneficio de la sociedad.
+    </p>
+  </section>
+
 
   <!-- DIEGO GARCIA: Pie de página -->
   <footer>
